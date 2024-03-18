@@ -286,7 +286,7 @@ Note: Before hashing files, we do sorting via `sort`. This makes exact same sort
 
 ## Skip Post command Hook
 
-You can skip post command hook by simply adding `skip-post-command-hook: false`
+You can skip post command hook by simply adding `skip-post-command-hook: true`
 
 ## Skip Cache on PRs
 
