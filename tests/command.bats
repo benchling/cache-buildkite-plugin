@@ -391,6 +391,7 @@ setup() {
   run "$PWD/hooks/post-command"
   assert_success
   refute_output --partial ':bash: Processing'
+  assert_output --partial 'SKIP_POST_COMMAND_HOOK flag Detected. Skipping...'
 
   unset BUILDKITE_PLUGIN_CACHE_SKIP_POST_COMMAND_HOOK
 }
