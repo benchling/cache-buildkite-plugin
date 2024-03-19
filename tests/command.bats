@@ -399,6 +399,7 @@ setup() {
 @test "Post-command is not skipped by default" {
 
   run "$PWD/hooks/post-command"
+  refute_output --partial 'SKIP_POST_COMMAND_HOOK flag Detected. Skipping...'
   assert_output --partial ':bash: Processing'
 
 }
